@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Monitoring System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #f07f7f;
+            padding: 10px;
+            font-size: 24px;
+            color: white;
+        }
+        img {
+            width: 150px;
+            margin-top: 20px;
+        }
+        .login-section {
+            margin-top: 20px;
+        }
+        .login-section input[type="text"], .login-section input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .login-section input[type="button"] {
+            width: 220px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-section input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function login() {
+            // Redirect to the voting system page
+            window.location.href = 'voting_system.html';
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        Welcome to Election Monitoring System
+    </div>
+
+    <div class="container">
+        <img src="data:image/png;base64,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" alt="Election Commission Logo">
+
+        <div class="login-section" id="loginForm">
+            <h3>User Login</h3>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="button" value="LOGIN" onclick="login()">
+        </div>
+
+        <div class="footer">
+            Think Twice - Vote VICE
+        </div>
+    </div>
+
+</body>
+</html>
